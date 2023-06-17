@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="bill-amount">Bill Amount</label>
+        <input id="bill-amount" type="tel" name="billAmount"  required/>
+      </div>
+      <div>
+        <label for="tip-rate">Tip Rate</label>
+        <input id="tip-rate" type="range" min="5" max="20" name="tipRate" required/>
+      </div>
+      <div>
+        <label for="total">Total</label>
+        <output name="total" for="bill-amount tip-rate" id="total"></output>
+      </div>
+    </form>
+    <script src="src/index.ts"></script>
+  </body>
+</html>
